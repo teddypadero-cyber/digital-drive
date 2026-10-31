@@ -1,0 +1,13 @@
+<svg width="737" height="726" viewBox="0 0 737 726" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <path id="arc" d="M30 363C30 179.089 181.552 30 368.5 30C555.448 30 707 179.089 707 363"/>
+  <linearGradient id="fade" x1="0" y1="30" x2="0" y2="235" gradientUnits="userSpaceOnUse"><stop stop-color="#818181" stop-opacity=".45"/><stop offset=".45" stop-color="#818181" stop-opacity=".25"/><stop offset="1" stop-color="#818181" stop-opacity="0"/></linearGradient>
+  <linearGradient id="center"><stop stop-color="black"/><stop offset=".35" stop-color="white"/><stop offset=".65" stop-color="white"/><stop offset="1" stop-color="black"/></linearGradient>
+  <linearGradient id="edges"><stop stop-color="white"/><stop offset=".35" stop-color="black"/><stop offset=".65" stop-color="black"/><stop offset="1" stop-color="white"/></linearGradient>
+  <mask id="sharp"><rect width="737" height="726" fill="url(#center)"/></mask>
+  <mask id="soft"><rect width="737" height="726" fill="url(#edges)"/></mask>
+  <filter id="blur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2"/></filter>
+</defs>
+<use href="#arc" stroke="url(#fade)" stroke-width="1" mask="url(#sharp)"/>
+<g mask="url(#soft)"><use href="#arc" stroke="url(#fade)" stroke-width="1" filter="url(#blur)"/></g>
+</svg>
